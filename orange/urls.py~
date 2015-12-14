@@ -4,8 +4,8 @@ from . import views
 
 urlpatterns = [
     url(r'^$', views.form_accueil, name='accueil'),
-    url(r'^Animaux/$', views.form_animaux, name='animaux'),
     url(r'^Animes/$', views.form_animes, name='animes'),
+    url(r'^Animaux/$', views.form_animaux, name='animaux'),
     url(r'^Documentaires/$', views.form_docus, name='documentaires'),
     url(r'^Movies/$', views.form_movies, name='movies'),
     url(r'^Musicvideos/$', views.form_musicvideo, name='musicvideos'),
