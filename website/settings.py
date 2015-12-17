@@ -27,8 +27,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-AUTH_USER_MODEL = 'orange.orangeuser'
-
 
 # Application definition
 
@@ -58,7 +56,7 @@ ROOT_URLCONF = 'website.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'orange/pageshtml')],
+        'DIRS': [os.path.join(BASE_DIR, 'orange/template')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

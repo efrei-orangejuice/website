@@ -66,21 +66,21 @@ def form_inscription(request):           #user sign in form
            c = {'form': form, 'error':err}
            #err : send an error "CGU not checked"
            c.update(csrf(request))
-           return render_to_response('templates/inscription.html', c)
+           return render_to_response('orange/inscription.html', c)
              
     else:
        form = FoInscription()
     c = {'form': form}
     c.update(csrf(request))
 
-    return render_to_response('templates/inscription.html', c)
+    return render_to_response('orange/inscription.html', c)
 
 
 
 def accueil(request):  
     c = {}
     c.update(csrf(request))
-    return render(request, 'templates/accueil.html', c)
+    return render(request, 'orange/accueil.html', c)
 
 def form_connexion(request):  #log in view
     
@@ -106,20 +106,20 @@ def form_connexion(request):  #log in view
     c = {'form': form}
     c.update(csrf(request))
 
-    return render_to_response('templates/connexion.html', c)
+    return render_to_response('orange/connexion.html', c)
 
 
 def welcome(request): #welcome view after signing in
     is_msg = 1
     c = {'msg':is_msg}
-    return render_to_response('templates/welcome.html', c)
+    return render_to_response('orange/welcome.html', c)
  
 def error(request): #error view when connecting
     is_error = 1
     form = FoConnexion()
     c = {'form': form, 'error':is_error}
     c.update(csrf(request))
-    return render_to_response('templates/connexion.html', c)
+    return render_to_response('orange/connexion.html', c)
 
 """END"""
 
