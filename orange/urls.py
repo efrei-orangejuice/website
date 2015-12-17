@@ -3,7 +3,6 @@ from django.contrib import admin
 from . import views
 
 urlpatterns = [
-    url(r'^$', views.form_accueil, name='accueil'),
     url(r'^Animaux/$', views.form_animaux, name='animaux'),
     url(r'^Animes/$', views.form_animes, name='animes'),
     url(r'^Documentaires/$', views.form_docus, name='documentaires'),
@@ -13,4 +12,9 @@ urlpatterns = [
     url(r'^Publicites/$', views.form_pubs, name='publicites'),
     url(r'^Romantiques/$', views.form_romantiques, name='romantiques'),
     url(r'^Trailers/$', views.form_trailers, name='trailers'),
+    url(r'^Inscription/$', views.form_inscription, name='inscription'),
+    url(r'^Accueil/$', views.accueil, name='accueil'),
+    url(r'^Connexion/$', views.form_connexion, name='connexion'),
+    url(r'^Connexion/Error/$', views.form_connexion, name='error'),
+    url(r'^Connexion/w/$', views.welcome, name='welcome'),
 ]
