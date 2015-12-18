@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+
+  </head>
+</html>
+
+{% load staticfiles %}
+
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"></meta>
+    <title>
+        Accueil | Orange Juice
+    </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</head>
+
+{% block body %}
+
+<div class="container">
+
+    <center><p>Coucou !</p></center>
+
+    {% load static %}
+
+    <div class="row">
+        <div class="col-md-4">
+            <a href="Animaux"><img src="{% static "chienimg.jpg" %}" alt="probleme img"/></a>
+        </div>
+        <div class="col-md-4">
+            <a href="Animes"><img src="{% static "animeimg.jpg" %}" height="256" width="256" alt="probleme img"/></a>
+        </div>
+        <div class="col-md-4">
+            <a href="Documentaires"><img src="{% static "docuimg.jpg" %}" alt="probleme img"/></a><br>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <a href="Movies"><img src="{% static "moviesimg.png" %}" alt="probleme img"/></a>
+        </div>
+        <div class="col-md-4">
+            <a href="Musicvideos"><img src="{% static "notemusic.png" %}" alt="probleme img"/></a>
+        </div>
+        <div class="col-md-4">
+            <a href="Personal"><img src="{% static "personalimg.jpg" %}" alt="probleme img"/></a>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <a href="Trailers"><img src="{% static "trailerimg.jpg" %}" alt="probleme img"/></a>
+        </div>
+        <div class="col-md-4">
+            <a href="Romantiques"><img src="{% static "coeur.png" %}" alt="probleme img"/></a>
+        </div>
+        <div class="col-md-4">
+            <a href="Publicites"><img src="{% static "cocacola.png" %}" alt="probleme img"/></a><br>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}

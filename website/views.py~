@@ -1,0 +1,50 @@
+# coding=utf-8
+
+from django.shortcuts import get_object_or_404, render
+from django.http import HttpResponseRedirect, HttpResponse
+from django.core.urlresolvers import reverse
+from django.views import generic
+from django.forms import ModelForm
+from django.shortcuts import render_to_response
+from django.template.context_processors import csrf
+from formulaire.models import schiftuser
+from django.contrib.auth import authenticate, login, logout
+from datetime import datetime
+from functools import partial, wraps
+from django.core.mail import EmailMessage
+import zipfile, os, sys, shutil
+from django.core.mail import send_mail
+from django.forms.formsets import formset_factory
+from django.http import HttpResponse
+from django.core.servers.basehttp import FileWrapper
+from osgeo import ogr, gdal, osr
+from django.utils.functional import curry
+from formulaire.models import Utilisateur, Commande, FoClasseur, FoInscription,\
+FoConnexion, Classeur, FoCommande, Couches, Type_couches, Service, FoCouches, \
+ParametresCouches, Devis, CoucheForm, ClientData, ChangeProfile, ResetForm, \
+dbf_att
+from formulaire.functions import create_attributes, find_driver_type, find_epsg \
+, WhatsCoucheType, GuessCouchePreciseType, ItemGenerator, GuessType, \
+get_client_ip, filter_client_email, change_name, GuessCouchePreciseSRID,\
+calc_lines, calc_pm, PostGisIn, con_to_lumi_back, generate_bill, generate_bill2
+from django.db import IntegrityError
+from django.contrib.gis.geoip import GeoIP
+import hashlib, random, time
+from django.utils import timezone
+from datetime import datetime, timedelta, date
+from subprocess import call
+from zipfile import BadZipfile
+from django.core.exceptions import ObjectDoesNotExist
+from smtplib import SMTPSenderRefused
+from django.shortcuts import render_to_response
+from django.template import RequestContext
+from django.template import Context, loader
+import chardet
+import subprocess
+
+def form_accueil(request):
+    return render_to_response('pageshtml/accueil.html')
+
+
+
+
