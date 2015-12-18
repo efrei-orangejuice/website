@@ -5,10 +5,7 @@ from django.contrib import admin
 from . import views
 
 urlpatterns = [
-    '''Etienne'''
     url(r'^home/$', views.home, name='home'),
-
-    '''Clement'''
     url(r'^Animaux/$', views.form_animaux, name='animaux'),
     url(r'^Animes/$', views.form_animes, name='animes'),
     url(r'^Documentaires/$', views.form_docus, name='documentaires'),
