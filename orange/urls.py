@@ -9,6 +9,7 @@ urlpatterns = [
     url(r'^Animaux/$', views.form_animaux, name='animaux'),
     url(r'^Animes/$', views.form_animes, name='animes'),
     url(r'^Documentaires/$', views.form_docus, name='documentaires'),
+    url(r'^styles/$', views.styles, name='styles'),
     url(r'^Movies/$', views.form_movies, name='movies'),
     url(r'^Musicvideos/$', views.form_musicvideo, name='musicvideos'),
     url(r'^Personal/$', views.form_personal, name='personal'),

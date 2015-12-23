@@ -17,6 +17,8 @@ from orange.models import orangeuser, FoInscription, FoConnexion
 def home(request):
     return HttpResponse("Home view.")
 
+def styles(request):
+    return HttpResponse("Styles")
 """JB PART"""
 
 def form_inscription(request):           #user sign in form
