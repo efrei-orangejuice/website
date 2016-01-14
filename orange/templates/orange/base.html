@@ -1,0 +1,601 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>{% block title %}{% endblock %}</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="icon" type="image/ico" href="images/favicon.ico" />
+	<!-- Google Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Dosis:400,500,600,700' rel='stylesheet' type='text/css' />
+
+	<!-- CSS Files -->
+	<link rel="stylesheet" href="static/orange/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" />
+	<link rel="stylesheet" href="static/orange/css/main.css" />
+	<link rel="stylesheet" href="static/orange/css/responsive.css" />
+
+	<!-- Javascript Files -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="static/orange/js/bootstrap.min.js"></script>
+	<script src="static/orange/js/jquery.flexslider.min.js"></script>
+	<script src="static/orange/js/scripts.js"></script>
+	
+</head>
+<body class="index">
+{% block content %}
+
+{% endblock %}
+	<!-- TOP-BAR -->
+	<div id="top-bar">
+		<div class="container">
+			<div id="site-description">Welcome to Awaaz music theme.</div>
+			<ul id="top-links">
+				<li class="login"><a href="#"><i class="fa fa-lock"></i><span>Login</span></a></li>
+				<li class="register"><a href="#"><i class="fa fa-user"></i><span>Register</span></a></li>
+				<li class="facebook"><a href="#"></a></li>
+				<li class="twitter"><a href="#"></a></li>
+				<li class="google-plus"><a href="#"></a></li>
+				<li class="youtube"><a href="#"></a></li>
+				<li class="search">
+					<input type="text" value="" name="search" id="top-search" />		
+					<a href="#"></a>
+				</li>
+			</ul><!-- end top-links -->
+		</div><!-- end container -->
+	</div> <!-- end top-bar -->
+
+	<header>
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="container">
+				<!-- Logo and toggle for navigation on mobile devices -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="Awaaz" /></a>
+				</div>
+
+				<!-- Navigation links -->
+				<div class="collapse navbar-collapse" id="main-nav">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="current"><a href="index.html">Home</a></li>
+						<li class="dropdown">
+							<a href="artists.html" class="dropdown-toggle disabled" data-toggle="dropdown">Artist <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="artists.html">Artists Overview</a></li>
+								<li><a href="artist.html">Artist Single</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="albums.html" class="dropdown-toggle disabled" data-toggle="dropdown">Album <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="albums.html">Albums Overview</a></li>
+								<li><a href="album.html">Album Single</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="blog.html" class="dropdown-toggle disabled" data-toggle="dropdown">Blog <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="blog.html">Blog Regular</a></li>
+								<li><a href="blog-single.html">Blog Single</a></li>
+								<li><a href="blog-grid.html">Blog Grid</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="events.html" class="dropdown-toggle disabled" data-toggle="dropdown">Events <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="events.html">Events Overview</a></li>
+								<li><a href="event-details.html">Event Details 1</a></li>
+								<li><a href="event-details-2.html">Event Details 2</a></li>
+								<li><a href="event-countdown.html">Event Countdown</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle disabled" data-toggle="dropdown">Pages <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="404.html">404 Page</a></li>
+								<li><a href="gallery.html">Galleries</a></li>
+								<li><a href="video.html">Videos</a></li>
+								<li><a href="typography.html">Typography</a></li>
+								<li><a href="elements.html">Elements</a></li>
+								<li><a href="tables.html">Tables</a></li>
+							</ul>
+						</li>
+						<li><a href="contact.html">Contact Us</a></li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div>
+		</nav>
+	</header>
+
+	<!-- Banner Slider -->
+	<section id="banner">
+		<div class="flexslider">
+			<ul class="slides">
+				<li>
+					<div class="container">
+						<h1>Awaaz the largest music theme</h1>
+						<p>Awaaz is a powerful and responsive Music, Band &amp; DJ HTML Template with pretty much advanced features like display Artists, Albums, Photo Galleries, Video Galleries and Events. </p>
+						<a href="#" class="action-button">Buy Template</a>
+					</div>
+				</li> <!-- end slide 1 -->
+				<li>
+					<div class="container">
+						<h1>Tons of pages included</h1>
+						<p>Awaaz is a powerful and responsive Music, Band &amp; DJ HTML Template with pretty much advanced features like display Artists, Albums, Photo Galleries, Video Galleries and Events. </p>
+						<a href="#" class="action-button">View Pages</a>
+					</div>
+				</li> <!-- end slide 2 -->
+				<li>
+					<div class="container">
+						<h1>Fully responsive grid layout</h1>
+						<p>Awaaz is a powerful and responsive Music, Band &amp; DJ HTML Template with pretty much advanced features like display Artists, Albums, Photo Galleries, Video Galleries and Events. </p>
+						<a href="#" class="action-button">Preview</a>
+					</div>
+				</li> <!-- end slide 3 -->
+			</ul>
+		</div>
+	</section>
+
+	<!-- features area -->
+	<section id="features">
+		<div class="container">
+			<!-- welcome message -->
+			<div class="welcome-message">
+				<h2>Welcome to <span>Awaaz Music</span> Theme</h2>
+				<p>Lbendum elit, eu euismod magna sapien ut nibh. Donec semper quam scelerisque tortor dictum gravida. aliquam eget <span>molestie nec, gravida ut sapien.</span></p>
+			</div> <!-- end welcome message -->
+
+			<!-- features -->
+			<div class="features">
+				<div class="row">
+					<div class="col-sm-4 feature">
+						<div class="feature-icon">
+							<i class="feature-icon fa fa-calendar"></i>
+						</div>
+						<h3>Events</h3>
+						<p>Eu euismod magna sapien ut nibh. Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst mauris.</p>
+					</div> <!-- end feature 1 -->
+					<div class="col-sm-4 feature">
+						<div class="feature-icon">
+							<i class="feature-icon fa fa-music"></i>
+						</div>
+						<h3>Albums</h3>
+						<p>Bendum elit, eu euismod magna sapien ut nibh. Donec semper quam scelerisque tortor dictum gravida. In hac mauris.</p>
+					</div> <!-- end feature 3 -->
+					<div class="col-sm-4 feature">
+						<div class="feature-icon">
+							<i class="feature-icon fa fa-headphones"></i>
+						</div>
+						<h3>Artists</h3>
+						<p>Euismod magna sapien ut nibh. Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. </p>
+					</div> <!-- end feature 3 -->
+				</div>
+			</div> <!-- end features -->
+		</div>
+	</section> <!-- end features area -->
+
+	<!-- main content area -->
+	<main>
+		<section id="events">
+			<div class="container">
+				<div class="row">
+					<!-- upcoming events --> 
+					<div class="col-md-6 upcoming-events">
+						<h2>Upcoming <span>events</span></h2>
+						<div class="event">
+							<div class="event-image">
+								<div class="event-date">
+									<span class="day-of-month">08</span>
+									<span class="day-of-week">wed</span>
+								</div>
+								<a href="#"><img src="images/photos/photo1.jpg" alt="Bridgestone Arena" /></a>
+							</div>
+							<h3><a href="#">Bridgestone Arena</a></h3>
+							<div class="event-location">
+								<span class="location"><i class="fa fa-map-marker"></i> Kristal Glam Club</span>
+								<span class="time"><i class="fa fa-clock-o"></i> 10:28 pm - 06:00 am</span>
+							</div>
+							<p>
+								Euismod magna sapien ut nibh. Donec semper quam scelerisque tortor dictum gravida. quam scelerisque tortor dictum gravida. 
+							</p>
+							<a href="#" class="buy-now">Buy Now</a>
+						</div>
+
+						<div class="row">
+							<div class="col-sm-6 event">
+								<div class="event-image">
+									<div class="event-date">
+										<span class="day-of-month">09</span>
+										<span class="day-of-week">thu</span>
+									</div>
+									<a href="#"><img src="images/photos/photo2.jpg" alt="Night Inspirescu Party" /></a>
+								</div>
+								<h3><a href="#">Night Inspirescu Party</a></h3>
+								<div class="event-location">
+									<span class="location"><i class="fa fa-map-marker"></i> La Mania Club</span>
+									<span class="time"><i class="fa fa-clock-o"></i> All Day</span>
+								</div>
+								<p>
+									Euismod magna sapien ut nibh. Donec semper quam scelerisque tortor dictum gravida. quam scelerisque tortor dictum gravida. 
+								</p>
+								<span class="sold-out">Sold Out</span>
+							</div>
+
+							<div class="col-sm-6 event">
+								<div class="event-image">
+									<div class="event-date">
+										<span class="day-of-month">12</span>
+										<span class="day-of-week">tue</span>
+									</div>
+									<a href="#"><img src="images/photos/photo3.jpg" alt="Dj Robag Ruhme" /></a>
+								</div>
+								<h3><a href="#">Dj Robag Ruhme</a></h3>
+								<div class="event-location">
+									<span class="location"><i class="fa fa-map-marker"></i> Kristal Glam Club</span>
+									<span class="time"><i class="fa fa-clock-o"></i> 10:28 pm - 06:00 am</span>
+								</div>
+								<p>
+									Euismod magna sapien ut nibh. Donec semper quam scelerisque tortor dictum gravida. quam scelerisque tortor dictum gravida. 
+								</p>
+								<a href="#" class="watch-live">Watch Live</a>
+							</div>
+						</div>
+					</div>
+
+					<!-- from the blog -->
+					<div class="col-md-6 recent-blog">
+						<h2>From <span>the blog</span></h2>
+						
+						<div class="row recent-post">
+							<div class="col-sm-6 post-image">
+								<a href="#"><img src="images/photos/photo4.jpg" alt="Nulla rutrum felis eu interdum" /></a>
+							</div>
+							<div class="col-sm-6 post-content">
+								<h3><a href="#">Nulla rutrum felis eu interdum</a></h3>
+								<div class="post-meta">
+									<span class="date"><i class="fa fa-calendar"></i> October 4, 2013</span>
+									<a href="#" class="comments"><i class="fa fa-comments"></i> 3 Comments</a>
+									<span class="tags"><i class="fa fa-tag"></i> <a href="#">Music</a></span>
+								</div>
+								<p>
+									Euismod magna sapien ut nibh. Donec semper quam scelerisque tortor dictum gravida. Euismod magna sapien ut nibh. 
+								</p>
+								<a href="#" class="read-more">Read More</a><i class="fa fa-angle-double-right read-more-icon"></i>
+							</div>
+						</div>
+						<div class="row recent-post">
+							<div class="col-sm-6 post-image">
+								<a href="#"><img src="images/photos/photo5.jpg" alt="Nulla rutrum felis eu interdum" /></a>
+							</div>
+							<div class="col-sm-6 post-content">
+								<h3><a href="#">Nulla rutrum felis eu interdum</a></h3>
+								<div class="post-meta">
+									<span class="date"><i class="fa fa-calendar"></i> October 4, 2013</span>
+									<a href="#" class="comments"><i class="fa fa-comments"></i> 3 Comments</a>
+									<span class="tags"><i class="fa fa-tag"></i> <a href="#">Music</a></span>
+								</div>
+								<p>
+									Euismod magna sapien ut nibh. Donec semper quam scelerisque tortor dictum gravida. Euismod magna sapien ut nibh. 
+								</p>
+								<a href="#" class="read-more">Read More</a><i class="fa fa-angle-double-right read-more-icon"></i>
+							</div>
+						</div>
+						<div class="row recent-post">
+							<div class="col-sm-6 post-image">
+								<a href="#"><img src="images/photos/photo6.jpg" alt="Nulla rutrum felis eu interdum" /></a>
+							</div>
+							<div class="col-sm-6 post-content">
+								<h3><a href="#">Nulla rutrum felis eu interdum</a></h3>
+								<div class="post-meta">
+									<span class="date"><i class="fa fa-calendar"></i> October 4, 2013</span>
+									<a href="#" class="comments"><i class="fa fa-comments"></i> 3 Comments</a>
+									<span class="tags"><i class="fa fa-tag"></i> <a href="#">Music</a></span>
+								</div>
+								<p>
+									Euismod magna sapien ut nibh. Donec semper quam scelerisque tortor dictum gravida. Euismod magna sapien ut nibh. 
+								</p>
+								<a href="#" class="read-more">Read More</a><i class="fa fa-angle-double-right read-more-icon"></i>
+							</div>
+						</div>
+						<div class="row recent-post">
+							<div class="col-sm-6 post-image">
+								<a href="#"><img src="images/photos/photo7.jpg" alt="Nulla rutrum felis eu interdum" /></a>
+							</div>
+							<div class="col-sm-6 post-content">
+								<h3><a href="#">Nulla rutrum felis eu interdum</a></h3>
+								<div class="post-meta">
+									<span class="date"><i class="fa fa-calendar"></i> October 4, 2013</span>
+									<a href="#" class="comments"><i class="fa fa-comments"></i> 3 Comments</a>
+									<span class="tags"><i class="fa fa-tag"></i> <a href="#">Music</a></span>
+								</div>
+								<p>
+									Euismod magna sapien ut nibh. Donec semper quam scelerisque tortor dictum gravida. Euismod magna sapien ut nibh. 
+								</p>
+								<a href="#" class="read-more">Read More</a><i class="fa fa-angle-double-right read-more-icon"></i>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- latest content section -->
+		<section id="latest-content">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 latest-videos">
+						<h2>Latest <span>Videos</span> <a href="#" class="view-all"><span>View All</span> <i class="fa fa-angle-double-right view-all-icon"></i></a></h2>
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="latest-content">
+									<a href="#">
+										<div class="latest-content-image">
+											<img src="images/photos/photo11.jpg" alt="" />
+										</div>
+										<div class="latest-content-info">
+
+											<div class="meta">
+												<div class="icon">
+													<i class="fa fa-video-camera"></i>
+												</div>
+												<h4>Simple Session</h4>
+												<p>9-October-2013</p>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="latest-content">
+									<a href="#">
+										<div class="latest-content-image">
+											<img src="images/photos/photo12.jpg" alt="" />
+										</div>
+										<div class="latest-content-info">
+											<div class="meta">
+												<div class="icon">
+													<i class="fa fa-video-camera"></i>
+												</div>
+												<h4>Quantum Force</h4>
+												<p>27-September-2013</p>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 latest-albums">
+						<h2>Latest <span>Albums</span> <a href="#" class="view-all"><span>View All</span> <i class="fa fa-angle-double-right view-all-icon"></i></a></h2>
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="latest-content">
+									<a href="#">
+										<div class="latest-content-image">
+											<img src="images/photos/photo13.jpg" alt="" />
+										</div>
+										<div class="latest-content-info">
+
+											<div class="meta">
+												<div class="icon">
+													<i class="fa fa-headphones"></i>
+												</div>
+												<h4>Large Worldwide</h4>
+												<p>Deep House, Pop/Rock</p>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="latest-content">
+									<a href="#">
+										<div class="latest-content-image">
+											<img src="images/photos/photo14.jpg" alt="" />
+										</div>
+										<div class="latest-content-info">
+											<div class="meta">
+												<div class="icon">
+													<i class="fa fa-headphones"></i>
+												</div>
+												<h4>Desire Evita</h4>
+												<p>Hip-Hop, Pop/Rock</p>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6 latest-gallery">
+						<h2>Latest <span>Gallery</span> <a href="#" class="view-all"><span>View All</span> <i class="fa fa-angle-double-right view-all-icon"></i></a></h2>
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="latest-content">
+									<a href="#">
+										<div class="latest-content-image">
+											<img src="images/photos/photo15.jpg" alt="" />
+										</div>
+										<div class="latest-content-info">
+
+											<div class="meta">
+												<div class="icon">
+													<i class="fa fa-camera"></i>
+												</div>
+												<h4>Sixth Element Club</h4>
+												<p>@Oslo, Norway</p>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="latest-content">
+									<a href="#">
+										<div class="latest-content-image">
+											<img src="images/photos/photo16.jpg" alt="" />
+										</div>
+										<div class="latest-content-info">
+											<div class="meta">
+												<div class="icon">
+													<i class="fa fa-camera"></i>
+												</div>
+												<h4>Beijing Live Show</h4>
+												<p>@Beijing, China</p>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 latest-artist">
+						<h2>Latest <span>Artist</span> <a href="#" class="view-all"><span>View All</span> <i class="fa fa-angle-double-right view-all-icon"></i></a></h2>
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="latest-content">
+									<a href="#">
+										<div class="latest-content-image">
+											<img src="images/photos/photo17.jpg" alt="" />
+										</div>
+										<div class="latest-content-info">
+
+											<div class="meta">
+												<div class="icon">
+													<i class="fa fa-user"></i>
+												</div>
+												<h4>Dj Charlie White</h4>
+												<p>Deep House</p>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="latest-content">
+									<a href="#">
+										<div class="latest-content-image">
+											<img src="images/photos/photo18.jpg" alt="" />
+										</div>
+										<div class="latest-content-info">
+											<div class="meta">
+												<div class="icon">
+													<i class="fa fa-user"></i>
+												</div>
+												<h4>Aaron LaCrate</h4>
+												<p>Trance</p>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main> <!-- end main content area -->
+
+	<!-- footer -->
+	<footer>
+		<!-- go to top --> 
+		<div class="container gototop">
+			<a href="#top">Go To Top</a><i class="fa fa-chevron-up"></i>
+		</div>
+
+		<!-- footer widgets -->
+		<div class="container">
+			<div class="row">
+				<div class="footer-col col-sm-6 col-md-3">
+					<h3>About Awaaz</h3>
+					<p>Nam vestibulum, arcu sodales feugiat consectetur, nisl orci bibendum elit, eu euismod magna sapien ut nibh. Donec semper quam scelerisque.</p>
+					<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+				</div>
+				<div class="footer-col col-sm-6 col-md-3">
+					<h3><i class="fa fa-twitter"></i> Twitter</h3>
+					<ul class="tweets">
+						<li>
+							In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit <a href="#">http://t.co/yY7s1IfrAb</a> <a href="#">2 days ago</a>
+						</li>
+						<li>
+							<span>RT</span> <a href="#">@JhonDoe:</a> Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est <a href="#">http://t.co/HMOeUv5BaD</a> <a href="#">8 days ago</a>
+						</li>
+						<li>
+							<span>RT</span> <a href="#">@tommcfarlin:</a> onec semper quam scelerisque tortor dictum gravida. <a href="#">http://t.co/HMOeUv5BaD</a> <a href="#">8 days ago</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-col col-sm-6 col-md-3">
+					<h3><i class="fa fa-link"></i> Quick Links</h3>
+					<div class="row">
+						<div class="col-xs-6 links-col">
+							<ul class="links">
+								<li><a href="#">News</a></li>
+								<li><a href="#">Gallery</a></li>
+								<li><a href="#">Video</a></li>
+								<li><a href="#">Shop</a></li>
+								<li><a href="#">Contact</a></li>
+								<li><a href="#">Events</a></li>
+							</ul>
+						</div>
+						<div class="col-xs-6 links-col">
+							<ul class="links">
+								<li><a href="#">About Us</a></li>
+								<li><a href="#">Shortcodes</a></li>
+								<li><a href="#">Terms &amp; Conditions</a></li>
+								<li><a href="#">Calendar</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="footer-col col-sm-6 col-md-3">
+					<h3><i class="fa fa-envelope"></i> Newsletter</h3>	
+					<p>Arcu sodales feugiat consectetur, nisl orci bibendum elit, eu euismod magna sapien ut nibh elit.</p>
+					<form action="#" name="subscribe-form" class="subscribe-form">
+						<input type="email" value="" name="email" class="email" />
+						<input type="submit" value="Submit" name="submit" class="submit" />
+					</form>
+				</div>
+			</div>
+		</div> <!-- end footer widgets -->
+
+		<div class="container bottom-footer">
+			<div class="row">
+				<!-- copyright notice -->
+				<div class="col-md-5 col-sm-6 copyright">
+					&copy; 2013 Awaaz. All rights reserved.
+				</div>
+
+				<div class="col-md-2 love">
+					<i class="fa fa-heart"></i> Love this theme.
+				</div>
+
+				<!-- social links -->
+				<div class="col-md-5 col-sm-6">
+					<ul class="social">
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+						<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+						<li><a href="#"><i class="fa fa-skype"></i></a></li>
+						<li><a href="#"><i class="fa fa-flickr"></i></a></li>
+						<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer> <!-- end footer -->
+
+</body>
+</html>

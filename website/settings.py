@@ -56,7 +56,7 @@ ROOT_URLCONF = 'website.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'orange/template')],
+        'DIRS': [os.path.join(BASE_DIR, 'orange/templates/orange')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -67,6 +67,12 @@ TEMPLATES = [
             ],
         },
     },
+]
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static/orange"),
+    '/var/www/static/',
+    os.path.join(BASE_DIR, "orange/static/orange/css"),
 ]
 
 WSGI_APPLICATION = 'website.wsgi.application'
@@ -100,4 +106,4 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = '/orange/static/'

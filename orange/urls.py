@@ -3,6 +3,8 @@ from . import views
 from django.conf.urls import include, url
 from django.contrib import admin
 from . import views
+from django.conf import settings
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 urlpatterns = [
     url(r'^home/$', views.home, name='home'),
@@ -22,3 +24,5 @@ urlpatterns = [
     url(r'^Connexion/Error/$', views.form_connexion, name='error'),
     url(r'^Connexion/w/$', views.welcome, name='welcome'),
 ]
+
+urlpatterns += staticfiles_urlpatterns()

@@ -18,7 +18,7 @@ def home(request):
     return HttpResponse("Home view.")
 
 def styles(request):
-    return HttpResponse("Styles")
+     return render(request, 'styles.html')
 """JB PART"""
 
 def form_inscription(request):           #user sign in form
