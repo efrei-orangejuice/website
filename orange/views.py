@@ -13,9 +13,6 @@ from django.core.urlresolvers import reverse
 from orange.models import orangeuser, FoInscription, FoConnexion
 
 # Create your views here.
-"""Etienne"""
-def home(request):
-    return HttpResponse("Home view.")
 
 def styles(request):
      return render(request, 'styles.html')
