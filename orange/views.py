@@ -84,7 +84,7 @@ def form_inscription(request):           #user sign in form
 def accueil(request):  
     c = {}
     c.update(csrf(request))
-    return render(request, 'orange/accueil.html', c)
+    return render(request, 'orange/accueil2.html', c)
 
 def form_connexion(request):  #log in view
     
