@@ -18,11 +18,11 @@ urlpatterns = [
     url(r'^Publicites/$', views.form_pubs, name='publicites'),
     url(r'^Romantiques/$', views.form_romantiques, name='romantiques'),
     url(r'^Trailers/$', views.form_trailers, name='trailers'),
-    url(r'^Inscription/$', views.form_inscription, name='inscription'),
+    url(r'^register/$', views.form_inscription, name='inscription'),
     url(r'^Accueil/$', views.accueil, name='accueil'),
-    url(r'^Connexion/$', views.form_connexion, name='connexion'),
-    url(r'^Connexion/Error/$', views.form_connexion, name='error'),
-    url(r'^Connexion/w/$', views.welcome, name='welcome'),
+    url(r'^signin/$', views.form_connexion, name='connexion'),
+    url(r'^signin/error/$', views.form_connexion, name='error'),
+    url(r'^signin/welcome/$', views.welcome, name='welcome'),
 ]
 
 urlpatterns += staticfiles_urlpatterns()

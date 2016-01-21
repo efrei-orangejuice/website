@@ -19,7 +19,8 @@ def home(request):
 
 def styles(request):
      return render(request, 'styles.html')
-"""JB PART"""
+
+"""JB """
 
 def form_inscription(request):           #user sign in form
     if request.method == 'POST':
@@ -102,9 +103,9 @@ def form_connexion(request):  #log in view
               login(request, user)
               #login the user
               request.session.set_expiry(3600)
-              return HttpResponseRedirect('w/')              
+              return HttpResponseRedirect('welcome/')              
            else:
-              return HttpResponseRedirect('Error/')
+              return HttpResponseRedirect('error/')
     
     else:
          form = FoConnexion()  #initial={'identifiant': 'votreidentifiant@login.fr','password':'testitest'}
