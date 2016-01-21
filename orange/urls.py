@@ -7,7 +7,7 @@ from django.conf import settings
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 urlpatterns = [
-    url(r'^home/$', views.home, name='accueil'),
+    url(r'^home/$', views.accueil, name='accueil'),
     url(r'^animals/$', views.form_animaux, name='animals'),
     url(r'^anime/$', views.form_animes, name='anime'),
     url(r'^documentaries/$', views.form_docus, name='documentaries'),
