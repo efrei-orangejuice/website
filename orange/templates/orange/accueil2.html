@@ -19,6 +19,14 @@
 
 {% block body %}
 
+<form action="register/">
+     <input type="submit" value="Register"/>
+</form>
+
+<form action="signin/">
+     <input type="submit" value="Sign in"/>
+</form>
+
 <div class="container">
 
     <center><p>Coucou !</p></center>
@@ -27,37 +35,37 @@
 
     <div class="row">
         <div class="col-md-4">
-            <a href="Animaux"><img src="{% static "chienimg.jpg" %}" alt="probleme img"/></a>
+            <a href="animals.html"><img src="{% static "chienimg.jpg" %}" alt="probleme img"/></a>
         </div>
         <div class="col-md-4">
-            <a href="Animes"><img src="{% static "animeimg.jpg" %}" height="256" width="256" alt="probleme img"/></a>
+            <a href="anime.html"><img src="{% static "animeimg.jpg" %}" height="256" width="256" alt="probleme img"/></a>
         </div>
         <div class="col-md-4">
-            <a href="Documentaires"><img src="{% static "docuimg.jpg" %}" alt="probleme img"/></a><br>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-md-4">
-            <a href="Movies"><img src="{% static "moviesimg.png" %}" alt="probleme img"/></a>
-        </div>
-        <div class="col-md-4">
-            <a href="Musicvideos"><img src="{% static "notemusic.png" %}" alt="probleme img"/></a>
-        </div>
-        <div class="col-md-4">
-            <a href="Personal"><img src="{% static "personalimg.jpg" %}" alt="probleme img"/></a>
+            <a href="documentaries.html"><img src="{% static "docuimg.jpg" %}" alt="probleme img"/></a><br>
         </div>
     </div>
 
     <div class="row">
         <div class="col-md-4">
-            <a href="Trailers"><img src="{% static "trailerimg.jpg" %}" alt="probleme img"/></a>
+            <a href="movies.html"><img src="{% static "moviesimg.png" %}" alt="probleme img"/></a>
         </div>
         <div class="col-md-4">
-            <a href="Romantiques"><img src="{% static "coeur.png" %}" alt="probleme img"/></a>
+            <a href="musicvideos.html"><img src="{% static "notemusic.png" %}" alt="probleme img"/></a>
         </div>
         <div class="col-md-4">
-            <a href="Publicites"><img src="{% static "cocacola.png" %}" alt="probleme img"/></a><br>
+            <a href="personal.html"><img src="{% static "personalimg.jpg" %}" alt="probleme img"/></a>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <a href="trailers.html"><img src="{% static "trailerimg.jpg" %}" alt="probleme img"/></a>
+        </div>
+        <div class="col-md-4">
+            <a href="romantic.html"><img src="{% static "coeur.png" %}" alt="probleme img"/></a>
+        </div>
+        <div class="col-md-4">
+            <a href="advertisement.html"><img src="{% static "cocacola.png" %}" alt="probleme img"/></a><br>
         </div>
     </div>
 

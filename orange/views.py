@@ -134,17 +134,17 @@ def error(request): #error view when connecting
 def form_animaux(request):
     c = {}
     c.update(csrf(request))
-    return render_to_response('animaux.html', c);
+    return render_to_response('animals.html', c);
 
 def form_animes(request):
     c = {}
     c.update(csrf(request))
-    return render_to_response('anime.html', c);
+    return render_to_response('animes.html', c);
 
 def form_docus(request):
     c = {}
     c.update(csrf(request))
-    return render_to_response('documentary.html', c);
+    return render_to_response('documentaries.html', c);
 
 def form_movies(request):
     c = {}
@@ -159,17 +159,17 @@ def form_musicvideo(request):
 def form_personal(request):
     c = {}
     c.update(csrf(request))
-    return render_to_response('personals.html', c);
+    return render_to_response('personal.html', c);
 
 def form_pubs(request):
     c = {}
     c.update(csrf(request))
-    return render_to_response('publicity.html', c);
+    return render_to_response('advertisement.html', c);
 
 def form_romantiques(request):
     c = {}
     c.update(csrf(request))
-    return render_to_response('romantiques.html', c);
+    return render_to_response('romantic.html', c);
 
 def form_trailers(request):
     c = {}
