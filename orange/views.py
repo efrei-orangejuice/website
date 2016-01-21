@@ -117,13 +117,18 @@ def welcome(request): #welcome view after signing in
     is_msg = 1
     c = {'msg':is_msg}
     return render_to_response('orange/welcome.html', c)
- 
+
 def error(request): #error view when connecting
     is_error = 1
     form = FoConnexion()
     c = {'form': form, 'error':is_error}
     c.update(csrf(request))
     return render_to_response('orange/connexion.html', c)
+
+def pswdforget(request):
+    c = {}
+    c.update(csrf(request))
+    return render(request, 'orange/pswdforget.html', c)
 
 """END"""
 
@@ -151,7 +156,7 @@ def form_movies(request):
 def form_musicvideo(request):
     c = {}
     c.update(csrf(request))
-    return render_to_response('musicvideo.html', c);
+    return render_to_response('musicvideos.html', c);
 
 def form_personal(request):
     c = {}

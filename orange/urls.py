@@ -22,6 +22,7 @@ urlpatterns = [
     url(r'^signin/$', views.form_connexion, name='connexion'),
     url(r'^signin/error/$', views.form_connexion, name='error'),
     url(r'^signin/welcome/$', views.welcome, name='welcome'),
+    url(r'passwordforgot/$', views.pswdforget, name='pswdforget'),
 ]
 
 urlpatterns += staticfiles_urlpatterns()
