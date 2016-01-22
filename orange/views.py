@@ -128,7 +128,7 @@ def error(request): #error view when connecting
 def pswdforget(request):
     c = {}
     c.update(csrf(request))
-    return render(request, 'orange/pswdforget.html', c)
+    return render(request, 'orange/passwordforgot.html', c)
 
 """END"""
 
