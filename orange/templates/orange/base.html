@@ -2,7 +2,9 @@
 
 <!DOCTYPE html>
 <html>
+{% load staticfiles %}
 <head>
+	{% load static %}
 	<meta charset="utf-8">
 	<title>{% block title %}{% endblock %}</title>
 
@@ -12,10 +14,10 @@
 	<link href='https://fonts.googleapis.com/css?family=Dosis:400,500,600,700' rel='stylesheet' type='text/css' />
 
 	<!-- CSS Files -->
-	<link rel="stylesheet" href="static/orange/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="{% static "orange/css/bootstrap.min.css" %}" />
 	<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" />
-	<link rel="stylesheet" href="static/orange/css/main.css" />
-	<link rel="stylesheet" href="static/orange/css/responsive.css" />
+	<link rel="stylesheet" href="{% static "orange/css/main.css" %}" />
+	<link rel="stylesheet" href="{% static "orange/css/responsive.css" %}" />
 
 	<!-- Javascript Files -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -25,9 +27,7 @@
 	
 </head>
 <body class="index">
-{% block content %}
 
-{% endblock %}
 	<!-- TOP-BAR -->
 	<div id="top-bar">
 		<div class="container">
@@ -35,11 +35,11 @@
 			<ul id="top-links">
 				<li class="login"><a href="#"><i class="fa fa-lock"></i><span>Login</span></a></li>
 				<li class="register"><a href="#"><i class="fa fa-user"></i><span>Register</span></a></li>
-				<li class="facebook"><a href="#"></a></li>
+				<!--<li class="facebook"><a href="#"></a></li>
 				<li class="twitter"><a href="#"></a></li>
 				<li class="google-plus"><a href="#"></a></li>
 				<li class="youtube"><a href="#"></a></li>
-				<li class="search">
+				--><li class="search">
 					<input type="text" value="" name="search" id="top-search" />		
 					<a href="#"></a>
 				</li>
@@ -142,7 +142,9 @@
 			</ul>
 		</div>
 	</section>
+{% block content %}
 
+{% endblock %}
 	<!-- features area -->
 	<section id="features">
 		<div class="container">
