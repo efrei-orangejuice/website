@@ -2,18 +2,245 @@
 
 {% block title %}styles{% endblock %}
 {% block content %}
+{% load staticfiles %}
+{% load static %}
+<!--
 <ul>
-	<li>Pop</li>
-	<li>Classic</li>
-	<li>Rock</li>
-	<li>Electro</li>
-	<li>World</li>
-	<li>Hip hop</li>
-	<li>Soul</li>
-	<li>Jazz</li>
-	<li>Blues</li>
-	<li>Rap</li>
-	<li>Rnb</li>
-	<li>Funk</li>
+	<li>Pop</li> <img src="{% static "orange/pop.jpg" %}" alt="pop"/>
+	<li>Classic</li> <img src="{% static "orange/classical.jpg" %}" alt="classical"/>
+	<li>Rock</li> <img src="{% static "orange/rock.jpg" %}" alt="rock"/>
+	<li>Electro</li> <img src="{% static "orange/electro.jpg" %}" alt="electro"/>
+	<li>World</li> <img src="{% static "orange/world.jpg" %}" alt="world"/>
+	<li>Hip hop</li> <img src="{% static "orange/hiphop.jpg" %}" alt="hiphop"/>
+	<li>Soul</li> <img src="{% static "orange/soul.jpg" %}" alt="soul"/>
+	<li>Jazz</li> <img src="{% static "orange/jazz.jpg" %}" alt="jazz"/>
+	<li>Blues</li> <img src="{% static "orange/blues.jpg" %}" alt="blues"/>
+	<li>Funk</li> <img src="{% static "orange/funk.jpg" %}" alt="funk"/>
 </ul>
+-->
+	<script>
+	$(document).ready(function(){
+		$( "#rock_pic" ).click(function() {
+		  $( "#rock" ).show("fast");
+		});
+	});
+	</script>
+
+
+	<main>
+	{% if styles_playlists %}
+	{% for style in styles_playlists %}
+	
+	<div class="sheet" id="{{ style.pls_name }}">
+		<div class="closebutton"></div>
+		<h1>{{ style.pls_name }}</h1>
+		<p>{{ style.pls_description }}</p>
+	</div>
+
+	{% endfor %}
+	{% else %}
+    <p>A problem occured while loading playlists.</p>
+	{% endif %}
+
+		<section id="content">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-10 col-xs-offset-1 artists-desc">
+						<p></p>
+					</div>
+				</div>
+
+				<div class="row artists">
+					<!-- artists -->
+					<div class="col-sm-6 col-md-3          artist guitar">
+						<div class="latest-content">
+								<div class="latest-content-image">
+									<img src="{% static "orange/pop.jpg" %}" alt="pop"/>
+								</div>
+								<div class="latest-content-info">
+
+									<div class="meta">
+										<div class="icon">
+											<i class="fa fa-user"></i>
+										</div>
+										<h4>Pop</h4>
+										<p>Deep House</p>
+									</div>
+								</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3 artist drummer">
+						<div class="latest-content">
+							<a href="artist.html">
+								<div class="latest-content-image">
+									<img src="{% static "orange/classical.jpg" %}" alt="classical"/>
+								</div>
+								<div class="latest-content-info">
+
+									<div class="meta">
+										<div class="icon">
+											<i class="fa fa-user"></i>
+										</div>
+										<h4>Classic</h4>
+										<p>Deep House</p>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3 artist guitar" id="rock_pic">
+						<div class="latest-content">
+								<div class="latest-content-image">
+									<img src="{% static "orange/rock.jpg" %}" alt="rock"/>
+								</div>
+								<div class="latest-content-info">
+
+									<div class="meta">
+										<div class="icon">
+											<i class="fa fa-user"></i>
+										</div>
+										<h4>Rock</h4>
+										<p>Trance, Rock</p>
+									</div>
+								</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3 artist solo">
+						<div class="latest-content">
+							<a href="artist.html">
+								<div class="latest-content-image">
+									<img src="{% static "orange/electro.jpg" %}" alt="electro"/>
+								</div>
+								<div class="latest-content-info">
+
+									<div class="meta">
+										<div class="icon">
+											<i class="fa fa-user"></i>
+										</div>
+										<h4>Electro</h4>
+										<p>Deep House</p>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3 artist singer">
+						<div class="latest-content">
+							<a href="artist.html">
+								<div class="latest-content-image">
+									<img src="{% static "orange/world.jpg" %}" alt="world"/>
+								</div>
+								<div class="latest-content-info">
+
+									<div class="meta">
+										<div class="icon">
+											<i class="fa fa-user"></i>
+										</div>
+										<h4>World</h4>
+										<p>Trance, Rock</p>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3 artist drummer">
+						<div class="latest-content">
+							<a href="artist.html">
+								<div class="latest-content-image">
+									<img src="{% static "orange/hiphop.jpg" %}" alt="hiphop"/>
+								</div>
+								<div class="latest-content-info">
+
+									<div class="meta">
+										<div class="icon">
+											<i class="fa fa-user"></i>
+										</div>
+										<h4>Hip hop</h4>
+										<p>Trance, Rock</p>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3 artist solo">
+						<div class="latest-content">
+							<a href="artist.html">
+								<div class="latest-content-image">
+									<img src="{% static "orange/soul.jpg" %}" alt="soul"/>
+								</div>
+								<div class="latest-content-info">
+
+									<div class="meta">
+										<div class="icon">
+											<i class="fa fa-user"></i>
+										</div>
+										<h4>Soul</h4>
+										<p>Deep House</p>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3 artist singer">
+						<div class="latest-content">
+							<a href="artist.html">
+								<div class="latest-content-image">
+									<img src="{% static "orange/jazz.jpg" %}" alt="jazz"/>
+								</div>
+								<div class="latest-content-info">
+
+									<div class="meta">
+										<div class="icon">
+											<i class="fa fa-user"></i>
+										</div>
+										<h4>Jazz</h4>
+										<p>Trance, Rock</p>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3 artist singer">
+						<div class="latest-content">
+							<a href="artist.html">
+								<div class="latest-content-image">
+									 <img src="{% static "orange/blues.jpg" %}" alt="blues"/>
+								</div>
+								<div class="latest-content-info">
+
+									<div class="meta">
+										<div class="icon">
+											<i class="fa fa-user"></i>
+										</div>
+										<h4>Blues</h4>
+										<p>Trance, Rock</p>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3 artist singer">
+						<div class="latest-content">
+							<a href="artist.html">
+								<div class="latest-content-image">
+									<img src="{% static "orange/funk.jpg" %}" alt="funk"/>
+								</div>
+								<div class="latest-content-info">
+
+									<div class="meta">
+										<div class="icon">
+											<i class="fa fa-user"></i>
+										</div>
+										<h4>Funk</h4>
+										<p>Trance, Rock</p>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main> <!-- end main content area -->
+
 {% endblock %}

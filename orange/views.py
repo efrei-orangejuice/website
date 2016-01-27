@@ -10,12 +10,40 @@ from django.contrib.auth import authenticate, login, logout
 from django.views import generic
 from django.forms import ModelForm
 from django.core.urlresolvers import reverse
-from orange.models import orangeuser, FoInscription, FoConnexion
+from orange.models import orangeuser, FoInscription, FoConnexion, playlist
+from django.template import loader
 
 # Create your views here.
 
+def accueil(request):  
+    c = {}
+    c.update(csrf(request))
+    return render(request, 'orange/accueil2.html', c)
+
+def ambiences(request):  
+    c = {}
+    c.update(csrf(request))
+    return render(request, 'orange/accueil2.html', c)
+
 def styles(request):
-     return render(request, 'styles.html')
+  #playlist.objects.all()
+  #playlists = {}
+  #for p in 
+  #   return render(request, 'styles.html')
+  styles_playlists = []
+  rock = playlist.objects.get(pls_name="rock")
+  styles_playlists.append(rock)
+  template = loader.get_template('orange/styles.html')
+  context = {
+        'styles_playlists': styles_playlists,
+  }
+  return HttpResponse(template.render(context, request))
+
+def search(request):
+	return HttpResponse("Search page")
+
+def user(request):
+	return HttpResponse("user")
 
 """JB """
 
@@ -81,10 +109,7 @@ def form_inscription(request):           #user sign in form
 
 
 
-def accueil(request):  
-    c = {}
-    c.update(csrf(request))
-    return render(request, 'orange/accueil2.html', c)
+
 
 def form_connexion(request):  #log in view
     
