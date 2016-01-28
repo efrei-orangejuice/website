@@ -184,9 +184,9 @@ class playlist(models.Model):
 	pls_user_id = models.IntegerField()
 	pls_name = models.CharField(max_length=200)
 	pls_description = models.CharField(max_length=200)
-	pls_duration = models.IntegerField()
-	pls_nb_view = models.IntegerField()
-	pls_date_last_view = models.DateField()
+	pls_duration = models.IntegerField(null=True)
+	pls_nb_view = models.IntegerField(null=True)
+	pls_date_last_view = models.DateField(null=True)
 
 class tj_media_playlist(models.Model):
 	tj_media_pls_id = models.AutoField(primary_key=True)

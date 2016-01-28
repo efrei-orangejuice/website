@@ -32,9 +32,16 @@
 	{% for style in styles_playlists %}
 	
 	<div class="sheet" id="{{ style.pls_name }}">
-		<div class="closebutton"></div>
-		<h1>{{ style.pls_name }}</h1>
-		<p>{{ style.pls_description }}</p>
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="closebutton"></div>
+				<h1>{{ style.pls_name }}</h1>
+				<p>{{ style.pls_description }}</p>
+				{% if style.pls_duration %}<p>Duration : {{ style.pls_duration }}</p>{% endif %}
+				<p>Number of views : {{ style.pls_nb_view }}</p>
+				<p>Last view : {{ style.pls_date_last_view }}</p>
+			</div>
+		</div>
 	</div>
 
 	{% endfor %}
