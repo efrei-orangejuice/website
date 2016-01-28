@@ -55,25 +55,6 @@ $(document).ready(function(){
 </script>
 
 
-	<!-- TOP-BAR -->
-	<div id="top-bar">
-		<div class="container">
-			<div id="site-description">Welcome to Awaaz music theme.</div>
-			<ul id="top-links">
-				<li class="login"><a href="#"><i class="fa fa-lock"></i><span>Login</span></a></li>
-				<li class="register"><a href="#"><i class="fa fa-user"></i><span>Register</span></a></li>
-				<!--<li class="facebook"><a href="#"></a></li>
-				<li class="twitter"><a href="#"></a></li>
-				<li class="google-plus"><a href="#"></a></li>
-				<li class="youtube"><a href="#"></a></li>
-				--><li class="search">
-					<input type="text" value="" name="search" id="top-search" />		
-					<a href="#"></a>
-				</li>
-			</ul><!-- end top-links -->
-		</div><!-- end container -->
-	</div> <!-- end top-bar -->
-
 	<header>
 		<nav class="navbar navbar-default" role="navigation">
 			<div class="container">
@@ -93,149 +74,54 @@ $(document).ready(function(){
 					<ul class="nav navbar-nav navbar-right">
 						<li class="current"><a href="index.html">Home</a></li>
 						<li class="dropdown">
-							<a href="artists.html" class="dropdown-toggle disabled" data-toggle="dropdown">Artist <b class="caret"></b></a>
+							<a href="news.html" class="dropdown-toggle disabled" data-toggle="dropdown">News <b class="caret"></b></a>
 							<ul class="dropdown-menu">
-								<li><a href="artists.html">Artists Overview</a></li>
-								<li><a href="artist.html">Artist Single</a></li>
+								<li><a href="#">To do</a></li>
 							</ul>
 						</li>
 						<li class="dropdown">
-							<a href="albums.html" class="dropdown-toggle disabled" data-toggle="dropdown">Album <b class="caret"></b></a>
+							<a href="albums.html" class="dropdown-toggle disabled" data-toggle="dropdown">Blogs <b class="caret"></b></a>
 							<ul class="dropdown-menu">
-								<li><a href="albums.html">Albums Overview</a></li>
-								<li><a href="album.html">Album Single</a></li>
+								<li><a href="#">To do</a></li>
 							</ul>
 						</li>
 						<li class="dropdown">
-							<a href="blog.html" class="dropdown-toggle disabled" data-toggle="dropdown">Blog <b class="caret"></b></a>
+							<a href="#" class="dropdown-toggle disabled" data-toggle="dropdown">Ambiences <b class="caret"></b></a>
 							<ul class="dropdown-menu">
-								<li><a href="blog.html">Blog Regular</a></li>
-								<li><a href="blog-single.html">Blog Single</a></li>
-								<li><a href="blog-grid.html">Blog Grid</a></li>
+								<li><a href="#">To do</a></li>
 							</ul>
 						</li>
 						<li class="dropdown">
-							<a href="events.html" class="dropdown-toggle disabled" data-toggle="dropdown">Events <b class="caret"></b></a>
+							<a href="#" class="dropdown-toggle disabled" data-toggle="dropdown">Styles <b class="caret"></b></a>
 							<ul class="dropdown-menu">
-								<li><a href="events.html">Events Overview</a></li>
-								<li><a href="event-details.html">Event Details 1</a></li>
-								<li><a href="event-details-2.html">Event Details 2</a></li>
-								<li><a href="event-countdown.html">Event Countdown</a></li>
+								<li><a href="#">To do</a></li>
 							</ul>
 						</li>
 						<li class="dropdown">
-							<a href="#" class="dropdown-toggle disabled" data-toggle="dropdown">Pages <b class="caret"></b></a>
+							<a href="#" class="dropdown-toggle disabled" data-toggle="dropdown">Search <b class="caret"></b></a>
 							<ul class="dropdown-menu">
-								<li><a href="404.html">404 Page</a></li>
-								<li><a href="gallery.html">Galleries</a></li>
-								<li><a href="video.html">Videos</a></li>
-								<li><a href="typography.html">Typography</a></li>
-								<li><a href="elements.html">Elements</a></li>
-								<li><a href="tables.html">Tables</a></li>
+								<li><a href="#">To do</a></li>
 							</ul>
 						</li>
-						<li><a href="contact.html">Contact Us</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle disabled" data-toggle="dropdown">User/Login <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Setting</a></li>
+								<li><a href="#">Likes</a></li>
+								<li><a href="#">Following</a></li>
+								<li><a href="#">Playlists</a></li>
+							</ul>
+						</li>
 					</ul>
 				</div><!-- /.navbar-collapse -->
 			</div>
 		</nav>
 	</header>
 
-{% block content %}
-
-{% endblock %}
+{% block content %}{% endblock %}
 
 
 
-	<!-- footer -->
-	<footer>
-		<!-- go to top --> 
-		<div class="container gototop">
-			<a href="#top">Go To Top</a><i class="fa fa-chevron-up"></i>
-		</div>
-
-		<!-- footer widgets -->
-		<div class="container">
-			<div class="row">
-				<div class="footer-col col-sm-6 col-md-3">
-					<h3>About Awaaz</h3>
-					<p>Nam vestibulum, arcu sodales feugiat consectetur, nisl orci bibendum elit, eu euismod magna sapien ut nibh. Donec semper quam scelerisque.</p>
-					<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
-				</div>
-				<div class="footer-col col-sm-6 col-md-3">
-					<h3><i class="fa fa-twitter"></i> Twitter</h3>
-					<ul class="tweets">
-						<li>
-							In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit <a href="#">http://t.co/yY7s1IfrAb</a> <a href="#">2 days ago</a>
-						</li>
-						<li>
-							<span>RT</span> <a href="#">@JhonDoe:</a> Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est <a href="#">http://t.co/HMOeUv5BaD</a> <a href="#">8 days ago</a>
-						</li>
-						<li>
-							<span>RT</span> <a href="#">@tommcfarlin:</a> onec semper quam scelerisque tortor dictum gravida. <a href="#">http://t.co/HMOeUv5BaD</a> <a href="#">8 days ago</a>
-						</li>
-					</ul>
-				</div>
-				<div class="footer-col col-sm-6 col-md-3">
-					<h3><i class="fa fa-link"></i> Quick Links</h3>
-					<div class="row">
-						<div class="col-xs-6 links-col">
-							<ul class="links">
-								<li><a href="#">News</a></li>
-								<li><a href="#">Gallery</a></li>
-								<li><a href="#">Video</a></li>
-								<li><a href="#">Shop</a></li>
-								<li><a href="#">Contact</a></li>
-								<li><a href="#">Events</a></li>
-							</ul>
-						</div>
-						<div class="col-xs-6 links-col">
-							<ul class="links">
-								<li><a href="#">About Us</a></li>
-								<li><a href="#">Shortcodes</a></li>
-								<li><a href="#">Terms &amp; Conditions</a></li>
-								<li><a href="#">Calendar</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="footer-col col-sm-6 col-md-3">
-					<h3><i class="fa fa-envelope"></i> Newsletter</h3>	
-					<p>Arcu sodales feugiat consectetur, nisl orci bibendum elit, eu euismod magna sapien ut nibh elit.</p>
-					<form action="#" name="subscribe-form" class="subscribe-form">
-						<input type="email" value="" name="email" class="email" />
-						<input type="submit" value="Submit" name="submit" class="submit" />
-					</form>
-				</div>
-			</div>
-		</div> <!-- end footer widgets -->
-
-		<div class="container bottom-footer">
-			<div class="row">
-				<!-- copyright notice -->
-				<div class="col-md-5 col-sm-6 copyright">
-					&copy; 2013 Awaaz. All rights reserved.
-				</div>
-
-				<div class="col-md-2 love">
-					<i class="fa fa-heart"></i> Love this theme.
-				</div>
-
-				<!-- social links -->
-				<div class="col-md-5 col-sm-6">
-					<ul class="social">
-						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-						<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-						<li><a href="#"><i class="fa fa-youtube"></i></a></li>
-						<li><a href="#"><i class="fa fa-skype"></i></a></li>
-						<li><a href="#"><i class="fa fa-flickr"></i></a></li>
-						<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</footer> <!-- end footer -->
 
 </body>
 </html>
