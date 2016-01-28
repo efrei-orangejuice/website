@@ -26,15 +26,20 @@
 	<script src="static/orange/js/scripts.js"></script>
 	<style>
 	.sheet {
-	    z-index:1;
-	    position:relative;
+	    z-index:2;
+	    float:left;
+	    position: absolute;
+	    background-color: rgba(0,0,0,0.8);
 	}
 	.sheet .closebutton {
-		position:float;
+		float:right;
 		align:right;
 		width:20px;
 		height:20px;
 		background-color:blue;
+	}
+	body{
+		z-index:1;
 	}
 </style>
 
