@@ -30,13 +30,15 @@
 	    float:left;
 	    position: absolute;
 	    background-color: rgba(0,0,0,0.8);
+	    width:100%;
+	    height: 100%;
 	}
 	.sheet .closebutton {
 		float:right;
 		align:right;
-		width:20px;
-		height:20px;
-		background-color:blue;
+		width:32px;
+		height:32px;
+		background-image: url("{% static "orange/close.png" %}");
 	}
 	body{
 		z-index:1;
@@ -48,6 +50,7 @@
 <body class="index">
 <script>
 $(document).ready(function(){
+	$(".sheet").hide();
 	$( ".closebutton" ).click(function() {
 	  $( ".sheet" ).hide("fast");
 	});

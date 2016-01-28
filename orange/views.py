@@ -33,6 +33,8 @@ def styles(request):
   styles_playlists = []
   rock = playlist.objects.get(pls_name="rock")
   styles_playlists.append(rock)
+  pop = playlist.objects.get(pls_name="pop")
+  styles_playlists.append(pop)
   template = loader.get_template('orange/styles.html')
   context = {
         'styles_playlists': styles_playlists,

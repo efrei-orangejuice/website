@@ -18,13 +18,24 @@
 	<li>Funk</li> <img src="{% static "orange/funk.jpg" %}" alt="funk"/>
 </ul>
 -->
+
+
+	{% if styles_playlists %}
 	<script>
 	$(document).ready(function(){
-		$( "#rock_pic" ).click(function() {
-		  $( "#rock" ).show("fast");
+	{% for style in styles_playlists %}
+		$( "#{{ style.pls_name }}_pic" ).click(function() {
+		  $( "#{{ style.pls_name }}" ).show("fast");
 		});
+	{% endfor %}
 	});
 	</script>
+	{% else %}
+    <p>A problem occured while loading playlists.</p>
+	{% endif %}
+
+
+
 
 
 	<main>
@@ -59,7 +70,7 @@
 
 				<div class="row artists">
 					<!-- artists -->
-					<div class="col-sm-6 col-md-3          artist guitar">
+					<div class="col-sm-6 col-md-3          artist guitar" id="pop_pic">
 						<div class="latest-content">
 								<div class="latest-content-image">
 									<img src="{% static "orange/pop.jpg" %}" alt="pop"/>
@@ -68,15 +79,14 @@
 
 									<div class="meta">
 										<div class="icon">
-											<i class="fa fa-user"></i>
+											<i class="fa fa-headphones"></i>
 										</div>
 										<h4>Pop</h4>
-										<p>Deep House</p>
 									</div>
 								</div>
 						</div>
 					</div>
-					<div class="col-sm-6 col-md-3 artist drummer">
+					<div class="col-sm-6 col-md-3 artist drummer" id="classic_pic">
 						<div class="latest-content">
 							<a href="artist.html">
 								<div class="latest-content-image">
@@ -86,10 +96,9 @@
 
 									<div class="meta">
 										<div class="icon">
-											<i class="fa fa-user"></i>
+											<i class="fa fa-headphones"></i>
 										</div>
 										<h4>Classic</h4>
-										<p>Deep House</p>
 									</div>
 								</div>
 							</a>
@@ -104,15 +113,14 @@
 
 									<div class="meta">
 										<div class="icon">
-											<i class="fa fa-user"></i>
+											<i class="fa fa-headphones"></i>
 										</div>
 										<h4>Rock</h4>
-										<p>Trance, Rock</p>
 									</div>
 								</div>
 						</div>
 					</div>
-					<div class="col-sm-6 col-md-3 artist solo">
+					<div class="col-sm-6 col-md-3 artist solo" id="electro_pic">
 						<div class="latest-content">
 							<a href="artist.html">
 								<div class="latest-content-image">
@@ -122,16 +130,18 @@
 
 									<div class="meta">
 										<div class="icon">
-											<i class="fa fa-user"></i>
+											<i class="fa fa-headphones"></i>
 										</div>
 										<h4>Electro</h4>
-										<p>Deep House</p>
 									</div>
 								</div>
 							</a>
 						</div>
 					</div>
-					<div class="col-sm-6 col-md-3 artist singer">
+
+				</div>
+				<div class="row">
+					<div class="col-sm-6 col-md-3 artist singer" id="world_pic">
 						<div class="latest-content">
 							<a href="artist.html">
 								<div class="latest-content-image">
@@ -141,16 +151,15 @@
 
 									<div class="meta">
 										<div class="icon">
-											<i class="fa fa-user"></i>
+											<i class="fa fa-headphones"></i>
 										</div>
 										<h4>World</h4>
-										<p>Trance, Rock</p>
 									</div>
 								</div>
 							</a>
 						</div>
 					</div>
-					<div class="col-sm-6 col-md-3 artist drummer">
+					<div class="col-sm-6 col-md-3 artist drummer" id="hiphop_pic">
 						<div class="latest-content">
 							<a href="artist.html">
 								<div class="latest-content-image">
@@ -160,16 +169,15 @@
 
 									<div class="meta">
 										<div class="icon">
-											<i class="fa fa-user"></i>
+											<i class="fa fa-headphones"></i>
 										</div>
 										<h4>Hip hop</h4>
-										<p>Trance, Rock</p>
 									</div>
 								</div>
 							</a>
 						</div>
 					</div>
-					<div class="col-sm-6 col-md-3 artist solo">
+					<div class="col-sm-6 col-md-3 artist solo" id="soul_pic">
 						<div class="latest-content">
 							<a href="artist.html">
 								<div class="latest-content-image">
@@ -179,16 +187,15 @@
 
 									<div class="meta">
 										<div class="icon">
-											<i class="fa fa-user"></i>
+											<i class="fa fa-headphones"></i>
 										</div>
 										<h4>Soul</h4>
-										<p>Deep House</p>
 									</div>
 								</div>
 							</a>
 						</div>
 					</div>
-					<div class="col-sm-6 col-md-3 artist singer">
+					<div class="col-sm-6 col-md-3 artist singer" id="jazz_pic">
 						<div class="latest-content">
 							<a href="artist.html">
 								<div class="latest-content-image">
@@ -198,16 +205,17 @@
 
 									<div class="meta">
 										<div class="icon">
-											<i class="fa fa-user"></i>
+											<i class="fa fa-headphones"></i>
 										</div>
 										<h4>Jazz</h4>
-										<p>Trance, Rock</p>
 									</div>
 								</div>
 							</a>
 						</div>
 					</div>
-					<div class="col-sm-6 col-md-3 artist singer">
+				</div>
+				<div class="row">
+					<div class="col-sm-6 col-md-3 artist singer" id="blues_pic">
 						<div class="latest-content">
 							<a href="artist.html">
 								<div class="latest-content-image">
@@ -217,16 +225,15 @@
 
 									<div class="meta">
 										<div class="icon">
-											<i class="fa fa-user"></i>
+											<i class="fa fa-headphones"></i>
 										</div>
 										<h4>Blues</h4>
-										<p>Trance, Rock</p>
 									</div>
 								</div>
 							</a>
 						</div>
 					</div>
-					<div class="col-sm-6 col-md-3 artist singer">
+					<div class="col-sm-6 col-md-3 artist singer" id="funk_pic">
 						<div class="latest-content">
 							<a href="artist.html">
 								<div class="latest-content-image">
@@ -236,10 +243,9 @@
 
 									<div class="meta">
 										<div class="icon">
-											<i class="fa fa-user"></i>
+											<i class="fa fa-headphones"></i>
 										</div>
 										<h4>Funk</h4>
-										<p>Trance, Rock</p>
 									</div>
 								</div>
 							</a>
