@@ -1,6 +1,13 @@
+{% extends 'base.html' %}
 
+{% block content %}
+
+{% load staticfiles %}
+
+{% load static %}
 <form enctype="multipart/form-data" method="POST" action="">
 <div class="container">
+   {% load static %}
    {% csrf_token %}
     <table class="table">
        {{ form }}
@@ -37,4 +44,5 @@
   </div>
  {% endif %}
  
+{% endblock %}
  

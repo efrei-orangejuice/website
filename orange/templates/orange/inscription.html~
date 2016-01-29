@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% load staticfiles %}
+
+{% load static %}
+<form enctype="multipart/form-data" method="POST" action="">
+<div class="container">
+   {% csrf_token %}
+    <table class="table">
+       {{ form }}
+    </table>
+
+  <div class="row">
+    <div class="sm-col-5">
+     <input type="submit" value="Valider" />
+    </div>
+    <div class="sm-col-1">
+     <input type ="checkbox" name="accept_CGU" value="1"/>
+     <p>J'accepte les conditions générales d'utilisations de Orange Juice</p>
+    </div>
+  </div>
+</div>
+</form>
+ {% if error %}
+    <div class="alert alert-warning">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        Veuillez accepter les conditions générales d'utilisation.
+    </div> 
+ {% endif %} 
+ {% if msg1 %}
+    <div class="alert alert-danger">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        Le mot de passe entré ne correspond pas à sa confirmation.
+    </div>
+ {% endif %}
+ 
+ {% if message %}
+  <div class="alert alert-warning">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        <p>Erreur : cette adresse e-mail est déjà utilisée.</p>
+  </div>
+ {% endif %}
+ 
+{% endblock %}
+ 

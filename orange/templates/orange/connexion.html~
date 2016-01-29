@@ -1,3 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% load staticfiles %}
+
+{% load static %}
+
 <form enctype="multipart/form-data" method="POST" action="">
  <div class="container">
    {% csrf_token %}
@@ -5,7 +13,7 @@
        {{ form }}
     </table>
     <input type="submit" value="Valider" />
-    <p><a href="http://lumithd.fr/schift/accueil/pswd/">Mot de passe oublié ?</a></p>
+    <p><a href="/passwordforgot">Mot de passe oublié ?</a></p>
     {% if error %}
       <div class="alert alert-danger">
         <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
@@ -14,3 +22,5 @@
     {% endif %}
  </div>
 </form>
+
+{% endblock %}

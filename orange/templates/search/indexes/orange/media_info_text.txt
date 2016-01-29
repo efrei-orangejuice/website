@@ -1,0 +1,3 @@
+{{ object.media_info_name }}
+{{ object.media_info_date_release }}
+{{ object.media_info_urlbar }}

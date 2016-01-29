@@ -5,6 +5,10 @@
   </head>
 </html>
 
+{% extends 'base.html' %}
+
+{% block content %}
+
 {% load staticfiles %}
 
 <head profile="http://www.w3.org/1999/xhtml/vocab">
@@ -17,17 +21,6 @@
 
 </head>
 
-{% block body %}
-
-<form action="/register/">
-     <input type="submit" value="Register"/>
-</form>
-
-
-
-<form action="/signin/">
-     <input type="submit" value="Sign in"/>
-</form>
 
 <div class="container">
 
