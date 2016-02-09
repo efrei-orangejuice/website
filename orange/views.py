@@ -91,7 +91,7 @@ def form_inscription(request):           #user sign in form
            #send an email to the new user to activate the account with an
            #activation link
            user.save()                       #save the session user in DB
-           return HttpResponseRedirect('/Accueil/')
+           return HttpResponseRedirect('/home/')
            # form = FoInscription()
       else:
            err=1 
