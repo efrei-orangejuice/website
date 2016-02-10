@@ -5,6 +5,16 @@
 {% load staticfiles %}
 
 {% load static %}
+<main>
+
+  <section id="tagline">
+    <div class="container">
+  <h1>Register</h1>
+    </div>
+  </section>
+
+<section id="content">
+
 <form enctype="multipart/form-data" method="POST" action="">
 <div class="container">
    {% load static %}
@@ -43,6 +53,8 @@
         <p>Erreur : cette adresse e-mail est déjà utilisée.</p>
   </div>
  {% endif %}
- 
+   </section>
+</main>
+
 {% endblock %}
  

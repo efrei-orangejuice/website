@@ -45,7 +45,16 @@ def search(request):
 	return HttpResponse("Search page")
 
 def user(request):
-	return HttpResponse("user")
+  if request.user.is_authenticated():
+    # Do something for authenticated users.    
+    template = loader.get_template('orange/user.html')
+    context = {
+      user
+    }
+    return HttpResponse(template.render(context, request))
+  else:
+    # Do something for anonymous users.
+    return HttpResponse("veuillez vous authentifier")
 
 """JB """
 
@@ -91,7 +100,7 @@ def form_inscription(request):           #user sign in form
            #send an email to the new user to activate the account with an
            #activation link
            user.save()                       #save the session user in DB
-           return HttpResponseRedirect('/Accueil/')
+           return HttpResponseRedirect('/home/')
            # form = FoInscription()
       else:
            err=1 
@@ -138,6 +147,7 @@ def form_connexion(request):  #log in view
     c.update(csrf(request))
 
     return render_to_response('orange/connexion.html', c)
+
 
 
 def welcome(request): #welcome view after signing in

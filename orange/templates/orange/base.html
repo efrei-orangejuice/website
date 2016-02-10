@@ -69,47 +69,32 @@ $(document).ready(function(){
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="/home/"><img src="images/logo.png" alt="Awaaz" /></a>
+					<a class="navbar-brand" href="/home/"><img src="{% static "orange/images/logo.png" %}" alt="Orange Juice" /></a>
 				</div>
 
 				<!-- Navigation links -->
 				<div class="collapse navbar-collapse" id="main-nav">
 					<ul class="nav navbar-nav navbar-right">
 					<!--	<li class="current"><a href="/home/">Home</a></li> -->
-						<li class="dropdown"> 
-							<a href="/home/" class="dropdown-toggle disabled" data-toggle="dropdown">News <b class="caret"></b></a>
-							<ul class="dropdown-menu">
-								<li><a href="#">To do</a></li>
-							</ul>
+						<li> 
+							<a href="/home/" class="dropdown-toggle disabled" data-toggle="dropdown">News </a>
 						</li>
-						<li class="dropdown">
-							<a href="albums.html" class="dropdown-toggle disabled" data-toggle="dropdown">Blogs <b class="caret"></b></a>
-							<ul class="dropdown-menu">
-								<li><a href="#">To do</a></li>
-							</ul>
+						<li  >
+							<a href="albums.html" class="dropdown-toggle disabled" data-toggle="dropdown">Blogs </a>
 						</li>
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle disabled" data-toggle="dropdown">Ambiences <b class="caret"></b></a>
-							<ul class="dropdown-menu">
-								<li><a href="#">To do</a></li>
-							</ul>
+						<li  >
+							<a href="#" class="dropdown-toggle disabled" data-toggle="dropdown">Ambiences </a>
 						</li>
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle disabled" data-toggle="dropdown">Styles <b class="caret"></b></a>
-							<ul class="dropdown-menu">
-								<li><a href="#">To do</a></li>
-							</ul>
+						<li  >
+							<a href="/styles" class="dropdown-toggle disabled" data-toggle="dropdown">Styles </a>
 						</li>
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle disabled" data-toggle="dropdown">Search <b class="caret"></b></a>
-							<ul class="dropdown-menu">
-								<li><a href="#">To do</a></li>
-							</ul>
+						<li  >
+							<a href="#" class="dropdown-toggle disabled" data-toggle="dropdown">Search </a>
 						</li>
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle disabled" data-toggle="dropdown">User/Login <b class="caret"></b></a>
-                                                <li class="current"><a href="/register/">Register</a></li>
-						<li class="current"><a href="/signin/">Sign in</a></li>
+						<!--<li  >
+							<a href="#" class="dropdown-toggle disabled" data-toggle="dropdown">User/Login <b class="caret"></b></a>-->
+                        <li><a href="/register/">Register</a></li>
+						<li><a href="/signin/">Sign in</a></li>
 							<ul class="dropdown-menu">
 								<li><a href="#">Setting</a></li>
 								<li><a href="#">Likes</a></li>
