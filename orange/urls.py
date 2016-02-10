@@ -26,6 +26,8 @@ urlpatterns = [
     url(r'^signin/error/$', views.form_connexion, name='error'),
     url(r'^signin/welcome/$', views.welcome, name='welcome'),
     url(r'passwordforgot/$', views.pswdforget, name='pswdforget'),
+    url(r'^weblog/', include('zinnia.urls', namespace='zinnia')),
+    url(r'^comments/', include('django_comments.urls')),
 ]
 
 urlpatterns += staticfiles_urlpatterns()
