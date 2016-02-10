@@ -5,23 +5,31 @@
 {% load staticfiles %}
 
 
+<main>
+  <section id="tagline">
+    <div class="container">
+  <h1>Sign in</h1>
+    </div>
+  </section>
 
-<form enctype="multipart/form-data" method="POST" action="">
- <div class="container">
-   {% load static %}
-   {% csrf_token %}
-    <table class="table">
-       {{ form }}
-    </table>
-    <input type="submit" value="Valider" />
-    <p><a href="/passwordforgot">Mot de passe oublié ?</a></p>
-    {% if error %}
-      <div class="alert alert-danger">
-        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-        <strong>Attention !</strong> Mot de passe ou identifiant non valide.
-      </div>
-    {% endif %}
- </div>
-</form>
-
+<section id="content">
+  <form enctype="multipart/form-data" method="POST" action="">
+   <div class="container">
+     {% load static %}
+     {% csrf_token %}
+      <table class="table">
+         {{ form }}
+      </table>
+      <input type="submit" value="Valider" />
+      <p><a href="/passwordforgot">Mot de passe oublié ?</a></p>
+      {% if error %}
+        <div class="alert alert-danger">
+          <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+          <strong>Attention !</strong> Mot de passe ou identifiant non valide.
+        </div>
+      {% endif %}
+   </div>
+  </form>
+  </section>
+</main>
 {% endblock %}

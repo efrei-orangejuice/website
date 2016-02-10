@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}styles{% endblock %}
+{% block content %}
+{% load staticfiles %}
+{% load static %}
+
+<h1>User</h1>
+
+<h2>{{user.user_firstname}}</h2>
+<h2>{{user.user_lastname}}</h2>
+<h2>{{user.user_age}}</h2>
+
+
+{% endblock %}
