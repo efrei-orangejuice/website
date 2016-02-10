@@ -14,8 +14,6 @@
 
 {% block body %}
 
-    <a>section publicites</a><br>
-    <iframe width="854" height="480" src="https://www.youtube.com/embed/w_7tgHf8d1c" frameborder="0" allowfullscreen></iframe>
-    <iframe width="854" height="480" src="https://www.youtube.com/embed/05tBnucMp_Y" frameborder="0" allowfullscreen></iframe>
+    <a>section publicites</a>
 
 {% endblock %}

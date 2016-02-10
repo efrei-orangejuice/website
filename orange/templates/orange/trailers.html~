@@ -14,8 +14,6 @@
 
 {% block body %}
 
-    <a>section trailers</a><br>
-    <iframe width="854" height="480" src="https://www.youtube.com/embed/CXuGLswn2l0" frameborder="0" allowfullscreen></iframe>
-    <iframe width="854" height="480" src="https://www.youtube.com/embed/CmRih_VtVAs" frameborder="0" allowfullscreen></iframe>
+    <a>section trailers</a>
 
 {% endblock %}

@@ -14,8 +14,6 @@
 
 {% block body %}
 
-    <a>section documentaire</a><br>
-    <iframe width="854" height="480" src="https://www.youtube.com/embed/3LfRItXYiW8" frameborder="0" allowfullscreen></iframe>
-    <iframe width="854" height="480" src="https://www.youtube.com/embed/VuXnU6RTAW8" frameborder="0" allowfullscreen></iframe>
+    <a>section documentaire</a>
 
 {% endblock %}

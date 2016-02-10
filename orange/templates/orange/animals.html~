@@ -14,7 +14,7 @@
 
 {% block body %}
 
-    <a>section animaux</a><br>
+    <a>section animaux</a>
     <iframe width="854" height="480" src="https://www.youtube.com/embed/tntOCGkgt98" frameborder="0" allowfullscreen></iframe>
     <iframe width="854" height="480" src="https://www.youtube.com/embed/2l_PmSOreGc" frameborder="0" allowfullscreen></iframe>
 

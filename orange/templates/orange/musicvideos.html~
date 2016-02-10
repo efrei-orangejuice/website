@@ -14,8 +14,6 @@
 
 {% block body %}
 
-    <a>section musicvideo</a><br>
-    <iframe width="854" height="480" src="https://www.youtube.com/embed/9bZkp7q19f0" frameborder="0" allowfullscreen></iframe>
-    <iframe width="854" height="480" src="https://www.youtube.com/embed/9UaJAnnipkY" frameborder="0" allowfullscreen></iframe>
+    <a>section musicvideo</a>
 
 {% endblock %}
