@@ -1,19 +1,11 @@
-<!DOCTYPE html>
-<html lang="fr">
-  <head>
+{% extends 'base.html' %}
+{% block content %}
+{% load staticfiles %}
 
-  </head>
-</html>
-
-<head profile="http://www.w3.org/1999/xhtml/vocab">
-    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"></meta>
-    <title>
-        Pages musicvideos | Orange Juice
-    </title>
-</head>
-
-{% block body %}
-
-    <a>section musicvideo</a>
+    <div class="container">
+        <a><b>Section musicvideo :</b></a><br><br>
+        <iframe width="854" height="480" src="https://www.youtube.com/embed/9bZkp7q19f0" frameborder="0" allowfullscreen></iframe>
+    <iframe width="854" height="480" src="https://www.youtube.com/embed/9UaJAnnipkY" frameborder="0" allowfullscreen></iframe>
+    </div>
 
 {% endblock %}

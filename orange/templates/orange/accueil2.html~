@@ -1,26 +1,9 @@
-<!DOCTYPE html>
-<html lang="fr">
-  <head>
-
-  </head>
-</html>
-
 {% extends 'base.html' %}
 
+{% block title %}home{% endblock %}
 {% block content %}
 
 {% load staticfiles %}
-
-<head profile="http://www.w3.org/1999/xhtml/vocab">
-    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"></meta>
-    <title>
-        Accueil | Orange Juice
-    </title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
-</head>
-
 
 <div class="container">
 
@@ -70,7 +53,7 @@
             <a href="/romantic"><img src="{% static "coeur.png" %}" alt="probleme img"/></a>
         </div>
         <div class="col-md-4">
-            <p>Advertissement</p>
+            <p>Advertissements</p>
             <a href="/advertisement"><img src="{% static "cocacola.png" %}" alt="probleme img"/></a><br>
         </div>
     </div>

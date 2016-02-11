@@ -1,21 +1,11 @@
-<!DOCTYPE html>
-<html lang="fr">
-  <head>
+{% extends 'base.html' %}
+{% block content %}
+{% load staticfiles %}
 
-  </head>
-</html>
-
-<head profile="http://www.w3.org/1999/xhtml/vocab">
-    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"></meta>
-    <title>
-        Pages romantiques | Orange Juice
-    </title>
-</head>
-
-{% block body %}
-
-    <p>ici catégorie vidéos romantiques</p>
-    <iframe width="854" height="480" src="https://www.youtube.com/embed/2BU5p8hwgXc" frameborder="0" allowfullscreen></iframe>
-    <iframe width="854" height="480" src="https://www.youtube.com/embed/MJXeCr4f0Jw" frameborder="0" allowfullscreen></iframe>
+    <div class="container">
+        <a><b>Section vidéos romantiques :</b></a><br><br>
+        <iframe width="854" height="480" src="https://www.youtube.com/embed/2BU5p8hwgXc" frameborder="0" allowfullscreen></iframe>
+        <iframe width="854" height="480" src="https://www.youtube.com/embed/MJXeCr4f0Jw" frameborder="0" allowfullscreen></iframe>
+    </div>
 
 {% endblock %}
