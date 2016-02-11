@@ -4,24 +4,28 @@
 {% block content %}
 
 {% load staticfiles %}
-
+<main>
+  <section id="tagline">
+    <div class="container">
+  <h1>Ambiences</h1>
+    </div>
+  </section>
+<section id="content">
 <div class="container">
-
-    <center><p>Page Ambiences</p></center>
 
     {% load static %}
 
     <div class="row">
         <div class="col-md-4">
-            <p>Animals</p>
+            <h3>Animals</h3>
             <a href="/animals"><img src="{% static "chienimg.jpg" %}" height="256" width="256" alt="probleme img"/></a>
         </div>
         <div class="col-md-4">
-            <p>Animes</p>
+            <h3>Animes</h3>
             <a href="/anime"><img src="{% static "animeimg.jpg" %}" height="256" width="256" alt="probleme img"/></a>
         </div>
         <div class="col-md-4">
-            <p>Documentaries</p>
+            <h3>Documentaries</h3>
             <a href="/documentaries"><img src="{% static "docuimg.jpg" %}" height="256" width="256" alt="probleme img"/></a><br>
         </div>
     </div>
@@ -29,15 +33,15 @@
 
     <div class="row">
         <div class="col-md-4">
-            <p>Movies</p>
+            <h3>Movies</h3>
             <a href="/movies"><img src="{% static "moviesimg.png" %}" height="256" width="256" alt="probleme img"/></a>
         </div>
         <div class="col-md-4">
-            <p>Music Videos</p>
+            <h3>Music Videos</h3>
             <a href="/musicvideos"><img src="{% static "notemusic.png" %}" height="256" width="256" alt="probleme img"/></a>
         </div>
         <div class="col-md-4">
-            <p>Personals</p>
+            <h3>Personals</h3>
             <a href="/personal"><img src="{% static "personalimg.jpg" %}" height="256" width="256" alt="probleme img"/></a>
         </div>
     </div>
@@ -45,19 +49,20 @@
 
     <div class="row">
         <div class="col-md-4">
-            <p>Trailers</p>
+            <h3>Trailers</h3>
             <a href="/trailers"><img src="{% static "trailerimg.jpg" %}" height="256" width="256" alt="probleme img"/></a>
         </div>
         <div class="col-md-4">
-            <p>Romantic Videos</p>
+            <h3>Romantic Videos</h3>
             <a href="/romantic"><img src="{% static "coeur.png" %}" height="256" width="256" alt="probleme img"/></a>
         </div>
         <div class="col-md-4">
-            <p>Advertissements</p>
+            <h3>Advertissements</h3>
             <a href="/advertisement"><img src="{% static "cocacola.png" %}" height="256" width="256" alt="probleme img"/></a><br>
         </div>
     </div>
 
 </div>
-
+</section>
+</main>
 {% endblock %}

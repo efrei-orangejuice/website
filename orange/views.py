@@ -18,7 +18,7 @@ from django.template import loader
 def accueil(request):  
     c = {}
     c.update(csrf(request))
-    return render(request, 'orange/accueil2.html', c)
+    return render(request, 'orange/home.html', c)
 
 def ambiences(request):  
     c = {}
