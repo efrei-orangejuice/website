@@ -42,7 +42,9 @@ def styles(request):
   return HttpResponse(template.render(context, request))
 
 def search(request):
-	return HttpResponse("Search page")
+    c = {}
+    c.update(csrf(request))
+    return render_to_response('search/search.html', c)
 
 def user(request):
   if request.user.is_authenticated():
@@ -81,18 +83,18 @@ def form_inscription(request):           #user sign in form
            login = form.cleaned_data.get('user_login')
            email_subject = 'Création de compte'
            email_body = 'Merci de vous être enregistré.'
-           #try:
-           user = orangeuser.objects.create_user(firstname, lastname, age, login, email, password)
+           try:
+               user = orangeuser.objects.create_user(firstname, lastname, age, login, email, password)
                #create a session user
-           #except IntegrityError:
-               #message = 1
+           except IntegrityError:
+               message = 1
                #send message user already exists
-               #form = FoInscription()
+               form = FoInscription()
                #create a variable dictionnary
-               #c={'form' : form, 'message' : message}
-               #c.update(csrf(request))
+               c={'form' : form, 'message' : message}
+               c.update(csrf(request))
                #add a csrf token, protects against cross site request forgery
-               #return render_to_response('templates/inscription.html', c)
+               return render_to_response('orange/inscription.html', c)
                #redirect user to the html page with the dictionnary
            #send_mail(email_subject, email_body, 'activation@orangejuice.fr', \
            #['jbdumoulin@hotmail.fr']\
